@@ -35,6 +35,7 @@ class Manager extends BaseUser{
 	public function __construct(){
 		\Twist::Route()->setDirectory(sprintf('%smanager/',TWIST_FRAMEWORK_VIEWS));
 		$this->_aliasURI('update-setting','GETupdatesetting');
+		$this->_aliasURI('scheduled-tasks','GETscheduledtasks');
 	}
 
 	/**

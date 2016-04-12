@@ -2,7 +2,7 @@
     <h2 class="no-top-padding">Scheduled Tasks</h2>
     <p>All scheduled tasks setup through TwistPHP are listed below. An indication of when the scheduler was last run can be found below.</p>
     <div>
-        <dl>
+        <dl class="inline">
             <dt>Status</dt><dd>Inactive</dd>
             <dt>Last Run</dt><dd>1 Minute Ago</dd>
             <dt>Frequency</dt><dd><select name="frequency">
@@ -16,9 +16,9 @@
                     <option value="60">Every hour</option>
                 </select></dd>
         </dl>
-        <h3>Setup Scheduled Tasks</h3>
+        <h3>Getting Started</h3>
         <p>To get up and running with TwistPHP's Scheduled Tasks you will need to setup a CronJob that runs once every minute. Why once a minute? TwistPHP will then run the scripts if any that need to be run at that time, this gives the complete freedom for you to run tasks periodically at any interval or time.</p>
-        <dl>
+        <dl class="inline">
             <dt>Command</dt><dd>php /path/to/my/file.php</dd>
             <dt>Time</dt><dd>"* * * * *" Every Minute</dd>
         </dl>
