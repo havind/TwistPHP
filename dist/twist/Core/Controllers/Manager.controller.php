@@ -384,6 +384,13 @@ class Manager extends BaseUser{
 		return $this->_view('pages/scheduled-tasks.tpl',$arrTags);
 	}
 
+	public function POSTscheduledtasks(){
+
+		$arrTags = array();
+
+		return $this->_view('pages/scheduled-tasks.tpl',$arrTags);
+	}
+
 	/**
 	 * Display all the installed and un-installed packages that are currently in your packages folder. The page does not currently have an APP store feature.
 	 * @return string
